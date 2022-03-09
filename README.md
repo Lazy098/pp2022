@@ -9,5 +9,5 @@ Students are expected to:
 Student Info
 =========================
 
-* Student Name: Nguyen Hoai Nam
-* Student ID: BI11-195
+* Student Name: *Put your name here*
+* Student ID: *Put your ID here*
