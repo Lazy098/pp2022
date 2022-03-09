@@ -9,6 +9,5 @@ Students are expected to:
 Student Info
 =========================
 
-* Student Name: *Put your name here*
-* Student ID: *Put your ID here*
-my class start afternoon 
+* Student Name: Nguyen Hoai Nam
+* Student ID: BI11-195
