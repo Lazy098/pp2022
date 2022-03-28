@@ -32,7 +32,7 @@ for i in range(numCourses):
   CourseL.append((idc, namec))
 
 d = {}
-m = int (input ("Enter how many student's marks in course do you want to enter? "))
+m = int(input("Enter how many student's marks in course do you want to enter? "))
 for i in range (m):
     while True:
         sid = input ("Enter student id: ")
@@ -45,12 +45,11 @@ for i in range (m):
           if marks>=0 and marks<=20:
             break;
           else:
-              print("\033[1;33;40m Mark should be >0 and <20 \033[0m")      
+              print("Mark should be >0 and <20")      
         except ValueError:
-          print("\033[1;31;40m Provide an integer value \033[0m")
+          print("Provide an integer value")
           continue
 
-        
     if cid in d:
         d [cid].append ((sid, marks))
     else:
