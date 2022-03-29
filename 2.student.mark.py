@@ -11,7 +11,9 @@ class Student:
 
 	def StudentL(stud):
 		studL = []
-		#I need to do sth in here 
+	    for i in range(stud.num):
+        stud.in4 = Studin4()
+        stud.append((stud.id, stud.name, stud.dob))
 
 
 class Course:
@@ -23,8 +25,10 @@ class Course:
 		cou.name = input("Enter course name: ")
 	def CourseL(cou):
 		coul = []
-		#like studL but need to change a little bit
-
+		for i in range(cou.many):
+		cou.in4 = Coursein4()
+		cou.append((cou.id ,cou.name))
+		
 
 #need to create another class about student's mark
 
@@ -32,12 +36,12 @@ class Course:
 afk = Student()
 afk.haveStudnum()
 afk.Studin4()
-#afk.studL()
+afk.StudentL()
 
 pity = Course()
 pity.haveCourse()
 pity.Coursein4()
-#pity.CourseL() (can use when i do sth in def courseL)
+pity.CourseL() 
 
 
 #this code still on going
