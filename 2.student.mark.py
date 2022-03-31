@@ -30,7 +30,32 @@ class Course:
 		cou.append((cou.id ,cou.name))
 		
 
-#need to create another class about student's mark
+class Stumark:
+	def Marks(mk):
+		d = {}
+		mk.ask = int(input("How many students are there?: "))
+		for i in range(mk.ask):
+			while True:
+				mk.studid = input("Enter student id: ")
+				mk.courid = input("Enter course id: ")
+
+			while True: 
+				mk.marks = int(input("Enter mark: "))
+				if mk.marks <= 20 and mr.marks >= 0:
+					break
+				else: 
+					print("enter right number (0 <= mark <= 20)")
+					continue
+
+			if mk.marks in d: 
+				d[mk.studid].append ((mk.studid, mk.marks))
+			else:
+				d[mk.studid] = [(mk.studid, mk.marks)]
+
+for sl in StudentL(stud):
+	mk.studlist = print(f"Student id: {sl[0]} | Name: {sl[1]} |Date of birth: {sl[2]}")
+for cl in CourseL(cou):
+    mk.courselist =print(f"Course id: {cl[0]} | Name: {cl[1]}")
 
 
 afk = Student()
@@ -43,6 +68,10 @@ pity.haveCourse()
 pity.Coursein4()
 pity.CourseL() 
 
-
-#this code still on going
-#it looks like a demo and i also add comment to remind me to finish that
+sco = Stumark()
+sco.ask()
+sco.studid()
+sco.courid()
+sco,marks()
+sco.studlist()
+sco.courselist()
