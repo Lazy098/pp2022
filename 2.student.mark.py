@@ -48,14 +48,14 @@ class Stumark:
 					continue
 
 			if mk.marks in d: 
-				d[mk.studid].append ((mk.studid, mk.marks))
+				d[].append ((mk.studid, mk.marks))
 			else:
-				d[mk.studid] = [(mk.studid, mk.marks)]
+				d[] = [(mk.studid, mk.marks)]
 
 for sl in StudentL(stud):
 	mk.studlist = print(f"Student id: {sl[0]} | Name: {sl[1]} |Date of birth: {sl[2]}")
 for cl in CourseL(cou):
-    mk.courselist =print(f"Course id: {cl[0]} | Name: {cl[1]}")
+    mk.courselist = print(f"Course id: {cl[0]} | Name: {cl[1]}")
 
 
 afk = Student()
