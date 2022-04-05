@@ -1,4 +1,4 @@
-from datetime import datetime
+from parse import parser
 class Student:
 	def __init__(self, id, name, dob):
 		self.id = id
@@ -6,13 +6,13 @@ class Student:
 		self.dob = dob  
 
 StudL = []
-num = int(input("Number of student: "))
-for i in range(0, num):
+studnum = int(input("Number of student: "))
+for i in range(0, studnum):
 	studentdetail = (
 	input("His/Her student id?: "),
-	input("His/Her name?: "),
-	input("Enter student date of birth: ")
-	)
+	input("His/Her name?: "),(
+	parser.parse(input("Enter date: "))
+	))
 	StudL.append(studentdetail)
 	
 class Course:
@@ -21,12 +21,22 @@ class Course:
 	    self.namecou = namecou
 
 CouL = []
-num = int(input("Number of course: "))
-for i in range(0, num):
+counum = int(input("Number of course: "))
+for i in range(0, counum):
 	coursedetail = (
 	input("Course id?: "),
 	input("Course name?: "),
 	)
-	CoudL.append(coursedetail)
+	CouL.append(coursedetail)
+
+x = {}
+num = int(input("How many student in the course?: "))
+for i in range(num):
+	while True:
+		studid = input("Enter his/her id: ")
+		couid = input("Enter course id: ")
+
+
+
 
 #well i remake lab2 because i see that was a mess so lab2 is going to be finish in the short time
