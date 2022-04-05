@@ -11,7 +11,7 @@ class Student:
 	def Studin4(stud):
 	    stud.id = input("Enter student ID: ")
 	    stud.name = input("Enter student name: ")
-	    stud.dob = input("Don't forget his/her date of birth: ")
+	    stud.dob = input("Don't forget his/her date of birth: ", %d/%m/%y)
 	    return stud.id, stud.name, stud.dob
 
 	def StudentL(stud):
