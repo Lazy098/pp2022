@@ -28,3 +28,5 @@ for i in range(0, num):
 	input("Course name?: "),
 	)
 	CoudL.append(coursedetail)
+
+#well i remake lab2 because i see that was a mess so lab2 is going to be finish in the short time
