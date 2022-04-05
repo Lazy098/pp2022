@@ -32,7 +32,6 @@ for i in range(0, counum):
 x = {}
 num = int(input("How many student in the course?: "))
 for i in range(num):
-	while True:
 		studid = input("Enter his/her id: ")
 		couid = input("Enter course id: ")
 
