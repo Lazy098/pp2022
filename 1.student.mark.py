@@ -1,69 +1,74 @@
-from datetime import datetime
+#some note that i follow your solve so sthing i don't know can i ask u about it ?
+def StudNum():
+  snum = int(input("How many students?: "))
+  return snum
+def Studin4(stud):
+  studs = [] 
+  for i in range (0, stud):
+    names = input("Student's name: ")
+    ids = input("Student's id: ")
+    dobs = input("Student's date of birth: ")
+    s = {
+      "name": names,
+      "id": ids,
+      "dob": dobs,
+      "marks": {} #as u say it will be a dict
+    }
+    studs.append(s)
+  return studs
+def CouNum():
+  cnum = int(input("How many courses?: "))
+  return cnum
+def Couin4(cou):
+  cous = []
+  for i in range (0, cou):
+    namec = input("Course's name: ")
+    idc = input("Course's id: ")
+    c = {
+      "name": namec,
+      "id": idc
+    }
+    cous.append(c)
+  return cous
+def CouPicked(cous):
+  CouL(cous)
+  coid = input('gimme your course id u choose from the previous list: ')
+  return coid
+def StudMark(coid, studs):
+  print(f'give marks in {coid} for him/her: ')
+  for std in studs:
+    studmk = int(input(Student {std['name']}))
+    std["marks"][coid] = Studmk 
 
-studin4 = {
-    "ID": None,
-    "Name": None,
-    "DoB": None
-}
+def StudL(studs):
+  print("\nStudent information list: ")
+  for stu in studs:
+    print(f'{stu["name"]} | {stu["id"]} | {stu["dob"]}')
+def CouL(cous):
+  print("\nCourse information list: ")
+  for co in cous:
+    print(f"{co['name']} | {co['id']}")
+def showIn4(coid, studsa):
+  print("\nWe have a mark for this course: ")
+    for stmrk in studs:
+      print(f'{stmrk["name"]} | {stmrk["mark"]}')
 
-def haveStudentinformation():
-  studin4 = {
-    "ID": input("show me your ID: "),
-    "Name": input("How about your name?: "),
-    "DoB": input("don't forget the date of birth: ")
-}
-  return studin4
 
-def haveCourceinformation():
-  idc = input("Enter cource id: ")
-  namec = input("Enter cource name please: ")
-  return idc, namec
+studentNumber = StudNum()
+studentdetail = Studin4(stud)
 
-numStudents = int(input("how many students are there?: "))
-StudentL = []
-for i in range(numStudents):
-  studin4 = haveStudentinformation()
-  StudentL.append(studin4)
+courseNumber = CouNum()
+coursedetail = Couin4(cou)
 
-numCourses = int(input("how many courses are there?: "))
-CourseL = []
-for i in range(numCourses):
-  idc, namec = haveCourceinformation()
-  CourseL.append((idc, namec))
+cousec = CouPicked()
+mark = StudMark(mrk)
 
-d = {}
-m = int(input("Enter how many student's marks in course do you want to enter? "))
-for i in range (m):
-    while True:
-        sid = input ("Enter student id: ")
-        cid = input ("Enter course id: ")
-        break
-        
-    while True:
-        try:
-          marks = int(input("Enter mark: ")) 
-          if marks>=0 and marks<=20:
-            break;
-          else:
-              print("Mark should be >0 and <20")      
-        except ValueError:
-          print("Provide an integer value")
-          continue
+StudL(studs)
+CouL(cous)
 
-    if cid in d:
-        d [cid].append ((sid, marks))
-    else:
-        d [cid] = [(sid, marks)]
-        
-print("\nWe got the student list")
-for t in StudentL:
-    print(f"Student id: {t[0]} | Name: {t[1]} |Date of birth: {t[2]}")
+cousec = CouPicked(cous)
+showIn4(cousec, studs)
 
-print("\nAlso got the course list")
-for o in CourseL:
-    print(f"Course id: {o[0]} | Name: {o[1]}")
-    
-cid = input("\nEnter course ID to check student's mark: ") 
-if cid in d:
-  for tups in d [cid]:
-    print (f"Student {tups[0]} got {tups [1]} marks")
+
+
+
