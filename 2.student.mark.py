@@ -1,4 +1,4 @@
-from parse import parser
+from datetime import datetime
 class Student:
 	def __init__(self, id, name, dob):
 		self.id = id
@@ -10,9 +10,9 @@ studnum = int(input("Number of student: "))
 for i in range(0, studnum):
 	studentdetail = (
 	input("His/Her student id?: "),
-	input("His/Her name?: "),(
-	parser.parse(input("Enter date: "))
-	))
+	input("His/Her name?: "),
+	datetime.strptime(int(input("Enter his/her date of birth: ")))
+	)
 	StudL.append(studentdetail)
 	
 class Course:
