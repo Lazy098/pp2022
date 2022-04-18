@@ -11,7 +11,7 @@ for i in range(0, studnum):
 	studentdetail = (
 	input("His/Her student id?: "),
 	input("His/Her name?: "),
-	datetime.strptime(int(input("Enter his/her date of birth: ")))
+	datetime.strptime(input( "Enter his/her date of birth: "), '%d/%m/%Y'),
 	)
 	StudL.append(studentdetail)
 	
@@ -35,7 +35,21 @@ for i in range(num):
 		studid = input("Enter his/her id: ")
 		couid = input("Enter course id: ")
 
+class Mark:
+	def __init__(self, mkstud)
+	    self.mkstud = mkstud
+	    m = []
+	def coursemk:
+	    while True:
+	        try: 
+	        	mkstud = int(input("Enter student's mark: "))
+	        if mkstud < 0 || mkstud > 20: 
+	        	print("Wrong access deny!")
+	        else
+	            print(f"Student {name} get {mkstud}")
+	        
 
 
 
-#well i remake lab2 because i see that was a mess so lab2 is going to be finish in the short time
+
+
