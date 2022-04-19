@@ -36,18 +36,27 @@ for i in range(num):
 		couid = input("Enter course id: ")
 
 class Mark:
-StudMk = []
-studetail = (
-	input("Enter student's id: "),
-	input("Enter course's id: ")
-	)
-    StudMk.append(studetail)
-    if True:
-    	stmark = int(input("Enter student's mark: "))
-    	if stmark < 0 || stmark >20:
-    		print("unvalid mark")
-    	else 
-    	    print(f"Studen {self.name} has {stmark} point in course {couid}")
+    def __init__(self, idstud, idcou, markstud):
+    	self.idstud = idstud
+    	self.idcou = idcou 
+    	self.markstud = markstud
+    def studmark(mrk):
+y = {}
+mrk.ask = int(input("Enter number of student: "))
+for i in range(mrk.ask):
+	while True:
+		mrk.idstud = input("Student id: ")
+		mrk.idcou = input("Course id:")
+	while True: 
+		mrk.mark = int(input("Student's mark: "))
+		if mrk.mark < 0 || mrk.mark > 20:
+			print("Wrong access deny! please do it again ( 0 <= mark <= 20")
+		else:
+			break 
+
+
+
+
 
 #out of idea :(( 
 
