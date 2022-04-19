@@ -56,6 +56,7 @@ class Stumark:
 				d[].append ((mk.studid, math.floor(mk.marks))
 			else:
 				d[] = [(mk.studid, math.floor(mk.marks))]
+				#the math.floor to rounding a integer 
 	'''def print(mk):
 	            mk.clear()
         for sl in StudentL(stud):
