@@ -11,14 +11,14 @@ class Student:
 	def Studin4(stud):
 	    stud.id = input("Enter student ID: ")
 	    stud.name = input("Enter student name: ")
-	    stud.dob = input("Don't forget his/her date of birth: ", %d/%m/%y)
+	    stud.dob = datetime.strptime(input("Don't forget his/her date of birth: ", %d/%m/%Y))
 	    return stud.id, stud.name, stud.dob
 
 	def StudentL(stud):
 		studL = []
 	    for i in range(stud.num):
-        stud.in4 = Studin4()
-        stud.append((stud.id, stud.name, stud.dob))
+            stud.in4 = Studin4()
+            stud.append((stud.id, stud.name, stud.dob))
 
 
 class Course:
